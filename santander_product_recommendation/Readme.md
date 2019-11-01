@@ -13,6 +13,7 @@ Problem:
 
 Data/Feature Engineering:
     1. There are number of features given for different users for different months.
+    
     2. It is possible that some users have left the bank and some are joining.
     3. A lot of information (csv columns) are strings and can be categorized.
        There are multiple ways to categorize the string('object') data. Such as
