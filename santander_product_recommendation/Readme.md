@@ -5,10 +5,12 @@ world problem using machine learning algorithms and doing feature and data engin
 Getting back to implentation.
 
 Input:
+
     The input is a csv file which contains information about the users of a bank.
     Such as date of joining, products bought, age, sex etc. over the period of 1.5 yr
     The data is logged on 28th of each month. (Jan 2015 to May 2016)
 Problem:
+
     The task is the predict what new product the user might buy for next month (june 2016).
 
 Data/Feature Engineering:
@@ -49,9 +51,11 @@ Data/Feature Engineering:
        to bring the values to same scale.
 
 Machine Learning:
+
     xgboost library is used to train and predict the model. It is one of the most famous
     machine learning library which uses gradient boosting. The input to xgb is numerical,
     so all the training and test data is first converted to numerical format(int/float).
+    
     Brief: Extreme Gradient Boosting-
            Boosting: it is a method of which uses ensemble of decision trees and weak learners
                      and thus reducing bias and variance.
@@ -79,6 +83,7 @@ Machine Learning:
     to_numpy() function.
 
 Prediction:
+
     Test data is prepared in same fashion as the train data.
     There was one issue with train data though, it only gives the user information but
     not the products it has so far so we take that informatiom from the training data.
